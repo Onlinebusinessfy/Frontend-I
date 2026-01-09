@@ -1,0 +1,9 @@
+body{ /* Es para aplicarle estilos al body */
+    margin: 0; /* Es el margen */
+    font-family: Arial, Helvetica, sans-serif; /* Es el tipo de letra */
+    background: #f4f4f4; /* Es el fondo */
+}
+
+/*El . antes de la palabra es para referirse a clases*/
+/* El # es para referise a ID */
+/* El * sirve para que los estilos se le aplique a todo */
