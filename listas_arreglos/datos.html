@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Y BOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <h1>DOM Y BOM</h1>
+</header>
+<body>
+    <h2>Cuadro Comparativo</h2>
+    <table>
+    <tr>
+        <th>Aspecto</th>
+        <th>DOM (Document Object Model)</th>
+        <th>BOM (Browser Object Model)</th>
+    </tr>
+
+    <tr>
+        <td><strong>Definición</strong></td>
+        <td>
+            Conjunto de funciones y atributos que actúan como una API para manipular
+            documentos HTML, XML y SVG. Permite acceder y modificar la estructura
+            y contenido del documento.
+        </td>
+        <td>
+            Modelo de objetos del navegador que representa la ventana del navegador
+            y sus componentes como historial, ubicación, pantalla y navegador.
+        </td>
+    </tr>
+
+    <tr>
+        <td><strong>Qué controla</strong></td>
+        <td>
+            Controla la estructura y el contenido del documento HTML/XML.
+        </td>
+        <td>
+            Controla el navegador, la ventana, el historial, la ubicación y la pantalla.
+        </td>
+    </tr>
+
+    <tr>
+        <td><strong>Objetos principales</strong></td>
+        <td>
+            <ul>
+                <li>document</li>
+                <li>element</li>
+                <li>node</li>
+                <li>document.body</li>
+                <li>document.head</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>window</li>
+                <li>location</li>
+                <li>history</li>
+                <li>navigator</li>
+                <li>screen</li>
+            </ul>
+        </td>
+    </tr>
+
+    <tr>
+        <td><strong>Ejemplos de uso</strong></td>
+        <td>
+            Cambiar texto de un elemento:
+            <pre>document.getElementById("titulo").innerText = "Hola Mundo";</pre>
+            Cambiar color de un elemento:
+            <pre>document.querySelector("p").style.color = "red";</pre>
+        </td>
+        <td>
+            Obtener tamaño de la ventana:
+            <pre>window.innerWidth;
+window.innerHeight;</pre>
+            Redirigir a otra página:
+            <pre>window.location.href = "https://google.com";</pre>
+        </td>
+    </tr>
+
+    <tr>
+        <td><strong>Diferencias clave</strong></td>
+        <td>
+            <ul>
+                <li>Se enfoca en el contenido y estructura del documento</li>
+                <li>Permite manipular HTML y CSS</li>
+                <li>Depende del documento cargado</li>
+                <li>Objeto principal: <strong>document</strong></li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Se enfoca en el navegador y su entorno</li>
+                <li>Permite controlar ventanas, historial y URL</li>
+                <li>Depende del navegador</li>
+                <li>Objeto principal: <strong>window</strong></li>
+            </ul>
+        </td>
+    </tr>
+
+</table>
+
+<h2>Lista de ciudades</h2>
+<p>Aquí se encuentran una lista de ciudades:</p>
+<button id="mostrarCiudades" class="boton">Mostrar Lista</button>
+
+</body>
+<script src="./script.js"></script>
+</html>
