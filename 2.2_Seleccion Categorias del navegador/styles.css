@@ -1,0 +1,52 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    margin: 0px 250px;
+    background-color: aliceblue;
+}
+
+h1{
+    color: blue;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+li{
+    color: rgb(199, 36, 240);
+}
+
+select{
+    color: blueviolet;
+    font-size: 30px;
+    padding: 20px;
+}
+
+ul {
+    margin-top: 15px;
+}
+
+button {
+    padding: 20px;
+    border-radius: 30px;
+    color: chocolate;
+    background-color: blanchedalmond;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #e5e7eb;
+    cursor: pointer;
+    background-color: aquamarine;
+
+}
+
