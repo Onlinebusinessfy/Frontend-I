@@ -1,0 +1,29 @@
+*{
+    font-family:sans-serif;
+}
+
+header h1{
+    text-align: center;
+    font-size: 36px;
+    background-color: aquamarine;
+    padding: 50px;
+}
+
+body{
+    background-color: aliceblue;
+    text-align: center;
+}
+
+
+button{
+    padding: 20px;
+    border-radius: 30px;
+    color: aquamarine;
+    background-color: black;
+}
+
+.producto {
+    color: rgb(2, 102, 69);
+    font-weight: bold;
+    margin: 50px 50px;
+}
