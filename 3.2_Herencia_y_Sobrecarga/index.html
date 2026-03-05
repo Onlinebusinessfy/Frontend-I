@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad - Clases y Herencia en JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Clases, Herencia y Sobrescritura en JavaScript</h1>
+
+    <section class="investigacion">
+        <h2>Investigación Teórica</h2>
+        <h3>¿Qué es una clase en JavaScript?</h3>
+        <p>
+            Una clase en Javascript es aquella que permite crear objectos con propiedades y métodos definidos. Es una
+            forma de organizar el código de forma entendible con el objetivo de simplificar el funcionamiento del
+            programa.
+            Una clase define la estructura y comportamiento que tendrán los objetos creados a partir de ella.
+        </p>
+
+        <h3>¿Qué es la herencia (extends)?</h3>
+        <p>
+            En JavaScript la palabra por el cual se implementa la herencia es extends. La cual permite que una clase
+            hoja herede atributos y métodos de la clase padre. La herencia permite que se pueda reutilizar código y se
+            creen estructuras más organizadas.
+        </p>
+
+        <h3>¿Qué es la sobrescritura de métodos (override)?</h3>
+        <p>
+            La sobrescritura de métodos es aquella que ocurre cuando una clase hija redefine a un métod que ya existe en
+            la clase padre. Lo cual permite que se pueda modificar o extender el comportamiento original. Todo esto por
+            medio del uso de Override.
+        </p>
+
+        <h3>¿Para qué sirve super() en un constructor?</h3>
+        <p>
+            El métido super sirve más que nada para llamar al constructor de la clase padre dentro del constructor de la
+            clase hija. Esto básicamente ára acceder al this cuando se usa en herencia. También permite acceder a los
+            metodos.
+        </p>
+
+        <p><strong>Fuentes:</strong></p>
+        <ul>
+            <li>Manz. (n.d.). Clases en Javascript - Javascript en español. https://lenguajejs.com/javascript/oop/clases/</li>
+            <li>MDN Web Docs. (2023). Clases en JavaScript.
+                https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Classes</li>
+            <li>Strjak. (n.d.). Concepto de Clases y Objetos en Javascript. Stack Overflow En Español. https://es.stackoverflow.com/questions/552998/concepto-de-clases-y-objetos-en-javascript</li>
+        </ul>
+    </section>
+
+    <section class="resultado">
+        <h2>Resultado</h2>
+        <div class="card">
+            <button onclick="mostrarProducto()">Mostrar Producto</button>
+            <div id="resultado" class="detalle"></div>
+        </div>
+    </section>
+
+    <script src="clases.js"></script>
+
+</body>
+
+</html>
