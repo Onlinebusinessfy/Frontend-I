@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+<head>
+    <title>Buscar Pokémon</title>
+</head>
+
+<body>
+
+    <h1>🔍 Buscar Pokémon</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="nombre" placeholder="Ej: pikachu">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <hr>
+
+    <h2>Resultado</h2>
+
+    <p><strong>Código HTTP:</strong> {{ status_code }}</p>
+    <p><strong>Mensaje:</strong> {{ mensaje }}</p>
+
+    {% if data %}
+    <div class="resultado">
+        <h2>{{ data.nombre }}</h2>
+        <img src="{{ data.imagen }}" alt="Carta de {{ data.nombre }}">
+        <p><strong>Tipo:</strong> {{ data.tipo }}</p>
+        <p><strong>Rareza:</strong> {{ data.rareza }}</p>
+        <p><strong>Set:</strong> {{ data.set }}</p>
+    </div>
+    {% endif %}
+
+    <hr>
+
+    <section class="analisis-errores">
+        <h2>📚 Análisis del manejo de errores en aplicaciones web</h2>
+
+        <h3>¿Por qué es importante manejar errores en aplicaciones web?</h3>
+        <p>Manejar errores en aplicaciones web es fundamental porque permite proteger la experiencia del usuario,
+            evitando que la aplicación se “rompa” y mostrando mensajes claros en lugar de pantallas confusas. Además,
+            ayuda a mantener la seguridad al prevenir que información sensible del sistema quede expuesta y facilita la
+            depuración, permitiendo que los desarrolladores identifiquen rápidamente la causa de los problemas.</p>
+
+        <h3>¿Qué riesgos existen si no se manejan adecuadamente?</h3>
+        <p>Si los errores no se manejan correctamente, pueden surgir varios riesgos: exposición de información interna
+            del sistema, fallas visibles para los usuarios, aumento de vulnerabilidades explotables por atacantes y
+            dificultad en el mantenimiento de la aplicación, ya que los errores acumulados dificultan la identificación
+            de problemas reales.</p>
+
+        <h3>¿Cómo ayudan los códigos de respuesta HTTP a identificar problemas?</h3>
+        <p>Los códigos de respuesta HTTP son esenciales para identificar problemas porque proporcionan información
+            clara sobre el resultado de una solicitud. Por ejemplo, un código 200 indica éxito, mientras que un código
+            404 señala que el recurso no fue encontrado. Estos códigos permiten a los desarrolladores y usuarios
+            entender rápidamente la naturaleza del problema y tomar las medidas adecuadas para resolverlo.</p>
+
+        <h3>Una comparación breve entre distintos tipos de errores o respuestas</h3>
+        <p>Entre los tipos de errores más comunes, un 404 Not Found indica una página inexistente y requiere redirigir o
+            informar al usuario; un 403 Forbidden muestra que el usuario no tiene permisos; un 500 Internal Server Error
+            refleja un fallo interno del servidor y debe registrarse sin mostrar información sensible; y un 400 Bad
+            Request indica que la solicitud contiene datos inválidos, lo que se puede resolver validando correctamente
+            los inputs. Cada tipo de error requiere un manejo específico para mantener la seguridad y la claridad.</p>
+
+        <h3>Reflexión</h3>
+        <p class="conclusion">
+        En conclusión, el saber manejar errores mejora considerablemente la seguridad y establidad del sistema. De
+        esta forma se logra obtener la confianza y satisfacción de los usuarios a la hora de utilizar la página. El
+        conocer sobre las respuestas http sirve para conocer los posibles errores que puedan surgir a la hora de
+        trabajar como en este caso con APIs, lo que vuelve más sencilla la comprensión del mismo y implementar de
+        manera adecuada el manejo de errores.
+        </p>
+    </section>
+
+</body>
+
+</html>
