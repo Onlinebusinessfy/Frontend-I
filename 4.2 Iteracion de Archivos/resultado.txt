@@ -1,0 +1,27 @@
+
+=== LISTA ORIGINAL ===
+Samuel
+Christian
+Alejandro
+Esteban
+Alan
+
+=== MAYÚSCULAS ===
+SAMUEL
+CHRISTIAN
+ALEJANDRO
+ESTEBAN
+ALAN
+
+=== ORDENADOS ===
+Alan
+Alejandro
+Christian
+Esteban
+Samuel
+
+== LARGO ===
+Alejandro
+
+=== TOTAL ===
+5
